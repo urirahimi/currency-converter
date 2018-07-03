@@ -27,7 +27,7 @@ const convertCurrency = async (from, to, amount) => {
     const rate = await getExchangeRate(from, to)
     const countries = await getCountries(to)
     const convertedAmount = (amount * rate).toFixed(2);
-    return `${amount} ${from} is worth ${convertedAmount} in ${to} spend in ${countries}` 
+    return `${amount} ${from} is worth ${convertedAmount} in ${to} !!!` 
 };
 
 
