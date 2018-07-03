@@ -7,7 +7,8 @@ function convert () {
             convertTo: $(".convert-to option:selected").val(),
             amountToConvert: jQuery('[name=amount-to-convert]').val()
         }).done(function (data){
-            alert(data);
+            //alert(data);
+            document.getElementById('result-label').innerHTML = data;
         })
       });
     }
